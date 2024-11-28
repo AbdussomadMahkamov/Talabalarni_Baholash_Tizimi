@@ -1,0 +1,12 @@
+D:\work\Talabalarni_Baholash\Talabalarni_Baholash\bin\Debug\Baholash_Tizimi.mdf
+D:\work\Talabalarni_Baholash\Talabalarni_Baholash\bin\Debug\Baholash_Tizimi_log.ldf
+D:\work\Talabalarni_Baholash\Talabalarni_Baholash\bin\Debug\Talabalarni_Baholash.exe.config
+D:\work\Talabalarni_Baholash\Talabalarni_Baholash\bin\Debug\Talabalarni_Baholash.exe
+D:\work\Talabalarni_Baholash\Talabalarni_Baholash\bin\Debug\Talabalarni_Baholash.pdb
+D:\work\Talabalarni_Baholash\Talabalarni_Baholash\obj\Debug\Talabalarni_Baholash.csproj.AssemblyReference.cache
+D:\work\Talabalarni_Baholash\Talabalarni_Baholash\obj\Debug\Talabalarni_Baholash.Form1.resources
+D:\work\Talabalarni_Baholash\Talabalarni_Baholash\obj\Debug\Talabalarni_Baholash.Properties.Resources.resources
+D:\work\Talabalarni_Baholash\Talabalarni_Baholash\obj\Debug\Talabalarni_Baholash.csproj.GenerateResource.cache
+D:\work\Talabalarni_Baholash\Talabalarni_Baholash\obj\Debug\Talabalarni_Baholash.csproj.CoreCompileInputs.cache
+D:\work\Talabalarni_Baholash\Talabalarni_Baholash\obj\Debug\Talabalarni_Baholash.exe
+D:\work\Talabalarni_Baholash\Talabalarni_Baholash\obj\Debug\Talabalarni_Baholash.pdb
