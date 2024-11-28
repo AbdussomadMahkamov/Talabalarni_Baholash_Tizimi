@@ -10,3 +10,5 @@ D:\work\Talabalarni_Baholash\Talabalarni_Baholash\obj\Debug\Talabalarni_Baholash
 D:\work\Talabalarni_Baholash\Talabalarni_Baholash\obj\Debug\Talabalarni_Baholash.csproj.CoreCompileInputs.cache
 D:\work\Talabalarni_Baholash\Talabalarni_Baholash\obj\Debug\Talabalarni_Baholash.exe
 D:\work\Talabalarni_Baholash\Talabalarni_Baholash\obj\Debug\Talabalarni_Baholash.pdb
+D:\work\Talabalarni_Baholash\Talabalarni_Baholash\obj\Debug\Talabalarni_Baholash.Main.resources
+D:\work\Talabalarni_Baholash\Talabalarni_Baholash\obj\Debug\Talabalarni_Baholash.Talabalar.resources
