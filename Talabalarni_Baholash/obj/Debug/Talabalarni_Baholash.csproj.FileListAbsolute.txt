@@ -12,3 +12,5 @@ D:\work\Talabalarni_Baholash\Talabalarni_Baholash\obj\Debug\Talabalarni_Baholash
 D:\work\Talabalarni_Baholash\Talabalarni_Baholash\obj\Debug\Talabalarni_Baholash.pdb
 D:\work\Talabalarni_Baholash\Talabalarni_Baholash\obj\Debug\Talabalarni_Baholash.Main.resources
 D:\work\Talabalarni_Baholash\Talabalarni_Baholash\obj\Debug\Talabalarni_Baholash.Talabalar.resources
+D:\work\Talabalarni_Baholash\Talabalarni_Baholash\obj\Debug\Talabalarni_Baholash.Guruhlar.resources
+D:\work\Talabalarni_Baholash\Talabalarni_Baholash\obj\Debug\Talabalarni_Baholash.Fanlar.resources

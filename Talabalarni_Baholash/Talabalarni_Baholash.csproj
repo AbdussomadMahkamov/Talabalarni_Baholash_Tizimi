@@ -61,6 +61,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Baholash_TizimiDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Baholash_TizimiDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Fanlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fanlar.Designer.cs">
+      <DependentUpon>Fanlar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +79,12 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Functions.cs" />
+    <Compile Include="Guruhlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guruhlar.Designer.cs">
+      <DependentUpon>Guruhlar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,8 +105,14 @@
     <Compile Include="Users.Designer.cs">
       <DependentUpon>Users.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Fanlar.resx">
+      <DependentUpon>Fanlar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guruhlar.resx">
+      <DependentUpon>Guruhlar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -107,6 +130,17 @@
     <EmbeddedResource Include="Talabalar.resx">
       <DependentUpon>Talabalar.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Baholash_TizimiDataSet.xsc">
+      <DependentUpon>Baholash_TizimiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Baholash_TizimiDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Baholash_TizimiDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Baholash_TizimiDataSet.xss">
+      <DependentUpon>Baholash_TizimiDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -32,15 +32,15 @@ namespace Talabalarni_Baholash
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.talabaBtn = new System.Windows.Forms.Button();
-            this.guruhBtn = new System.Windows.Forms.Button();
-            this.fanBtn = new System.Windows.Forms.Button();
-            this.uqituvchiBtn = new System.Windows.Forms.Button();
             this.bahoBtn = new System.Windows.Forms.Button();
+            this.uqituvchiBtn = new System.Windows.Forms.Button();
+            this.fanBtn = new System.Windows.Forms.Button();
+            this.guruhBtn = new System.Windows.Forms.Button();
+            this.talabaBtn = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -67,17 +67,6 @@ namespace Talabalarni_Baholash
             this.panel2.Size = new System.Drawing.Size(278, 781);
             this.panel2.TabIndex = 0;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.panel3.BackgroundImage = global::Talabalarni_Baholash.Properties.Resources.icon;
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(278, 142);
-            this.panel3.TabIndex = 0;
-            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.bahoBtn);
@@ -92,14 +81,51 @@ namespace Talabalarni_Baholash
             this.panel4.Size = new System.Drawing.Size(278, 639);
             this.panel4.TabIndex = 1;
             // 
-            // panel5
+            // bahoBtn
             // 
-            this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(278, 10);
-            this.panel5.TabIndex = 0;
+            this.bahoBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bahoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bahoBtn.Location = new System.Drawing.Point(0, 182);
+            this.bahoBtn.Name = "bahoBtn";
+            this.bahoBtn.Size = new System.Drawing.Size(278, 43);
+            this.bahoBtn.TabIndex = 5;
+            this.bahoBtn.Text = "Baholar jadvali";
+            this.bahoBtn.UseVisualStyleBackColor = true;
+            // 
+            // uqituvchiBtn
+            // 
+            this.uqituvchiBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.uqituvchiBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uqituvchiBtn.Location = new System.Drawing.Point(0, 139);
+            this.uqituvchiBtn.Name = "uqituvchiBtn";
+            this.uqituvchiBtn.Size = new System.Drawing.Size(278, 43);
+            this.uqituvchiBtn.TabIndex = 4;
+            this.uqituvchiBtn.Text = "O\'qituvchilar jadvali";
+            this.uqituvchiBtn.UseVisualStyleBackColor = true;
+            // 
+            // fanBtn
+            // 
+            this.fanBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.fanBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fanBtn.Location = new System.Drawing.Point(0, 96);
+            this.fanBtn.Name = "fanBtn";
+            this.fanBtn.Size = new System.Drawing.Size(278, 43);
+            this.fanBtn.TabIndex = 3;
+            this.fanBtn.Text = "Fanlar jadvali";
+            this.fanBtn.UseVisualStyleBackColor = true;
+            this.fanBtn.Click += new System.EventHandler(this.fanBtn_Click);
+            // 
+            // guruhBtn
+            // 
+            this.guruhBtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guruhBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guruhBtn.Location = new System.Drawing.Point(0, 53);
+            this.guruhBtn.Name = "guruhBtn";
+            this.guruhBtn.Size = new System.Drawing.Size(278, 43);
+            this.guruhBtn.TabIndex = 2;
+            this.guruhBtn.Text = "Guruhlar jadvali";
+            this.guruhBtn.UseVisualStyleBackColor = true;
+            this.guruhBtn.Click += new System.EventHandler(this.guruhBtn_Click);
             // 
             // talabaBtn
             // 
@@ -113,57 +139,35 @@ namespace Talabalarni_Baholash
             this.talabaBtn.UseVisualStyleBackColor = true;
             this.talabaBtn.Click += new System.EventHandler(this.talabaBtn_Click);
             // 
-            // guruhBtn
+            // panel5
             // 
-            this.guruhBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guruhBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guruhBtn.Location = new System.Drawing.Point(0, 53);
-            this.guruhBtn.Name = "guruhBtn";
-            this.guruhBtn.Size = new System.Drawing.Size(278, 43);
-            this.guruhBtn.TabIndex = 2;
-            this.guruhBtn.Text = "Guruhlar jadvali";
-            this.guruhBtn.UseVisualStyleBackColor = true;
-            // 
-            // fanBtn
-            // 
-            this.fanBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.fanBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fanBtn.Location = new System.Drawing.Point(0, 96);
-            this.fanBtn.Name = "fanBtn";
-            this.fanBtn.Size = new System.Drawing.Size(278, 43);
-            this.fanBtn.TabIndex = 3;
-            this.fanBtn.Text = "Fanlar jadvali";
-            this.fanBtn.UseVisualStyleBackColor = true;
-            // 
-            // uqituvchiBtn
-            // 
-            this.uqituvchiBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.uqituvchiBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uqituvchiBtn.Location = new System.Drawing.Point(0, 139);
-            this.uqituvchiBtn.Name = "uqituvchiBtn";
-            this.uqituvchiBtn.Size = new System.Drawing.Size(278, 43);
-            this.uqituvchiBtn.TabIndex = 4;
-            this.uqituvchiBtn.Text = "O\'qituvchilar jadvali";
-            this.uqituvchiBtn.UseVisualStyleBackColor = true;
-            // 
-            // bahoBtn
-            // 
-            this.bahoBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bahoBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bahoBtn.Location = new System.Drawing.Point(0, 182);
-            this.bahoBtn.Name = "bahoBtn";
-            this.bahoBtn.Size = new System.Drawing.Size(278, 43);
-            this.bahoBtn.TabIndex = 5;
-            this.bahoBtn.Text = "Baholar jadvali";
-            this.bahoBtn.UseVisualStyleBackColor = true;
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(278, 10);
+            this.panel5.TabIndex = 0;
             // 
             // panel6
             // 
+            this.panel6.BackgroundImage = global::Talabalarni_Baholash.Properties.Resources.icon;
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(278, 0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1011, 781);
             this.panel6.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panel3.BackgroundImage = global::Talabalarni_Baholash.Properties.Resources.icon;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(278, 142);
+            this.panel3.TabIndex = 0;
             // 
             // Main
             // 

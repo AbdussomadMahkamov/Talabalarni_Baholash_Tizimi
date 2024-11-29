@@ -32,5 +32,15 @@ namespace Talabalarni_Baholash
         {
             loadform(new Talabalar());
         }
+
+        private void guruhBtn_Click(object sender, EventArgs e)
+        {
+            loadform(new Guruhlar());
+        }
+
+        private void fanBtn_Click(object sender, EventArgs e)
+        {
+            loadform(new Fanlar());
+        }
     }
 }
