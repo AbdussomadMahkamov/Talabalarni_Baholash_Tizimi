@@ -42,5 +42,10 @@ namespace Talabalarni_Baholash
         {
             loadform(new Fanlar());
         }
+
+        private void uqituvchiBtn_Click(object sender, EventArgs e)
+        {
+            loadform(new Oqituvchilar());
+        }
     }
 }

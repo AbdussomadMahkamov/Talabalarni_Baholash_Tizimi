@@ -102,6 +102,7 @@ namespace Talabalarni_Baholash
             this.uqituvchiBtn.TabIndex = 4;
             this.uqituvchiBtn.Text = "O\'qituvchilar jadvali";
             this.uqituvchiBtn.UseVisualStyleBackColor = true;
+            this.uqituvchiBtn.Click += new System.EventHandler(this.uqituvchiBtn_Click);
             // 
             // fanBtn
             // 
