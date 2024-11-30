@@ -47,5 +47,10 @@ namespace Talabalarni_Baholash
         {
             loadform(new Oqituvchilar());
         }
+
+        private void bahoBtn_Click(object sender, EventArgs e)
+        {
+            loadform(new Baholar());
+        }
     }
 }

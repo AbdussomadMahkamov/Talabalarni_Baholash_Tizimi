@@ -31,6 +31,7 @@ namespace Talabalarni_Baholash
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.bahoBtn = new System.Windows.Forms.Button();
@@ -39,7 +40,6 @@ namespace Talabalarni_Baholash
             this.guruhBtn = new System.Windows.Forms.Button();
             this.talabaBtn = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -55,6 +55,16 @@ namespace Talabalarni_Baholash
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1289, 781);
             this.panel1.TabIndex = 0;
+            // 
+            // panel6
+            // 
+            this.panel6.BackgroundImage = global::Talabalarni_Baholash.Properties.Resources.icon;
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Location = new System.Drawing.Point(278, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1011, 781);
+            this.panel6.TabIndex = 1;
             // 
             // panel2
             // 
@@ -91,6 +101,7 @@ namespace Talabalarni_Baholash
             this.bahoBtn.TabIndex = 5;
             this.bahoBtn.Text = "Baholar jadvali";
             this.bahoBtn.UseVisualStyleBackColor = true;
+            this.bahoBtn.Click += new System.EventHandler(this.bahoBtn_Click);
             // 
             // uqituvchiBtn
             // 
@@ -148,16 +159,6 @@ namespace Talabalarni_Baholash
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(278, 10);
             this.panel5.TabIndex = 0;
-            // 
-            // panel6
-            // 
-            this.panel6.BackgroundImage = global::Talabalarni_Baholash.Properties.Resources.icon;
-            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(278, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1011, 781);
-            this.panel6.TabIndex = 1;
             // 
             // panel3
             // 

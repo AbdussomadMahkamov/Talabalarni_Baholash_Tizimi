@@ -15,3 +15,4 @@ D:\work\Talabalarni_Baholash\Talabalarni_Baholash\obj\Debug\Talabalarni_Baholash
 D:\work\Talabalarni_Baholash\Talabalarni_Baholash\obj\Debug\Talabalarni_Baholash.Guruhlar.resources
 D:\work\Talabalarni_Baholash\Talabalarni_Baholash\obj\Debug\Talabalarni_Baholash.Fanlar.resources
 D:\work\Talabalarni_Baholash\Talabalarni_Baholash\obj\Debug\Talabalarni_Baholash.Oqituvchilar.resources
+D:\work\Talabalarni_Baholash\Talabalarni_Baholash\obj\Debug\Talabalarni_Baholash.Baholar.resources
