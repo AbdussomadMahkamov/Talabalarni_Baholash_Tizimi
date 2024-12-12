@@ -52,5 +52,10 @@ namespace Talabalarni_Baholash
         {
             loadform(new Baholar());
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            loadform(new FanVaGuruh());
+        }
     }
 }

@@ -78,6 +78,12 @@
     <Compile Include="Fanlar.Designer.cs">
       <DependentUpon>Fanlar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FanVaGuruh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FanVaGuruh.Designer.cs">
+      <DependentUpon>FanVaGuruh.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Fanlar.resx">
       <DependentUpon>Fanlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FanVaGuruh.resx">
+      <DependentUpon>FanVaGuruh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

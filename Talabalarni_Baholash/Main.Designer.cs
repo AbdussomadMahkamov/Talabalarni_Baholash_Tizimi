@@ -31,7 +31,6 @@ namespace Talabalarni_Baholash
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.bahoBtn = new System.Windows.Forms.Button();
@@ -40,6 +39,8 @@ namespace Talabalarni_Baholash
             this.guruhBtn = new System.Windows.Forms.Button();
             this.talabaBtn = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -56,16 +57,6 @@ namespace Talabalarni_Baholash
             this.panel1.Size = new System.Drawing.Size(1289, 781);
             this.panel1.TabIndex = 0;
             // 
-            // panel6
-            // 
-            this.panel6.BackgroundImage = global::Talabalarni_Baholash.Properties.Resources.icon;
-            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(278, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1011, 781);
-            this.panel6.TabIndex = 1;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.HotTrack;
@@ -79,6 +70,7 @@ namespace Talabalarni_Baholash
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.button1);
             this.panel4.Controls.Add(this.bahoBtn);
             this.panel4.Controls.Add(this.uqituvchiBtn);
             this.panel4.Controls.Add(this.fanBtn);
@@ -160,6 +152,28 @@ namespace Talabalarni_Baholash
             this.panel5.Size = new System.Drawing.Size(278, 10);
             this.panel5.TabIndex = 0;
             // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(0, 225);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(278, 43);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Fan va Guruh";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.BackgroundImage = global::Talabalarni_Baholash.Properties.Resources.icon;
+            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Location = new System.Drawing.Point(278, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(1011, 781);
+            this.panel6.TabIndex = 1;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.HotTrack;
@@ -200,5 +214,6 @@ namespace Talabalarni_Baholash
         private System.Windows.Forms.Button guruhBtn;
         private System.Windows.Forms.Button talabaBtn;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button button1;
     }
 }
