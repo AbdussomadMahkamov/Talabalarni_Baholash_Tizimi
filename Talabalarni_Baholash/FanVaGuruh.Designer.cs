@@ -38,6 +38,7 @@ namespace Talabalarni_Baholash
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.fanVaGuruhData = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fanVaGuruhData)).BeginInit();
@@ -67,6 +68,7 @@ namespace Talabalarni_Baholash
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.connectGroupSubject);
             this.panel1.Controls.Add(this.fanCombo);
             this.panel1.Controls.Add(this.guruhCombo);
@@ -81,7 +83,7 @@ namespace Talabalarni_Baholash
             // connectGroupSubject
             // 
             this.connectGroupSubject.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.connectGroupSubject.Location = new System.Drawing.Point(812, 27);
+            this.connectGroupSubject.Location = new System.Drawing.Point(722, 28);
             this.connectGroupSubject.Name = "connectGroupSubject";
             this.connectGroupSubject.Size = new System.Drawing.Size(115, 36);
             this.connectGroupSubject.TabIndex = 11;
@@ -135,6 +137,17 @@ namespace Talabalarni_Baholash
             this.fanVaGuruhData.Size = new System.Drawing.Size(1011, 651);
             this.fanVaGuruhData.TabIndex = 6;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkRed;
+            this.button1.Location = new System.Drawing.Point(843, 27);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(156, 36);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Shakllantirish";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FanVaGuruh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 23F);
@@ -168,5 +181,6 @@ namespace Talabalarni_Baholash
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button connectGroupSubject;
         private System.Windows.Forms.DataGridView fanVaGuruhData;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -68,5 +68,48 @@ namespace Talabalarni_Baholash
                 MessageBox.Show(ex.Message, "Bildirishnoma");
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string Query4;
+            Query4 = "Select * From FanVaGuruh where Guruh='{0}';";
+            Query4 = string.Format(Query4,
+                guruhCombo.Text);
+            fanVaGuruhData.DataSource = Con.GetData(Query4);
+            string[] guruh = guruhCombo.Text.Split('-');
+            string guruh1 = guruh[0] + '_' + guruh[1];
+            string qatorda = "CREATE TABLE [dbo].[Baho_"+guruh1+ "](" +
+                "[Id] INT IDENTITY(1, 1) NOT NULL PRIMARY KEY, " +
+                "[Guruh] VARCHAR(50) NOT NULL," +
+                "[Talaba_Id] INT NOT NULL, " +
+                "[Ism] VARCHAR(50) NOT NULL," +
+                "[Familya] VARCHAR(50) NOT NULL,";
+            //MessageBox.Show(qatorda, "Bildirishnoma");
+            string fanlar = "";
+            int i = 0;
+            int son = fanVaGuruhData.Rows.Count;
+            foreach(DataGridViewRow row in fanVaGuruhData.Rows)
+            {
+                if (row.Cells[2].Value != null)
+                {
+                    fanlar += "[" + row.Cells[2].Value.ToString() + "] INT NULL";
+                    if (i != son - 2)
+                    {
+                        fanlar += ",";
+                    }
+                    //MessageBox.Show(row.Cells[2].Value.ToString(), "Bildirishnoma");
+                }
+                else
+                {
+                    break;
+                }
+                i++;
+                
+            }
+            qatorda += fanlar + ");";
+            Con.SetData(qatorda);
+            MessageBox.Show("Guruhga fanlar qo'shildi!", "Bildirishnoma!");
+
+        }
     }
 }

@@ -18,8 +18,10 @@ namespace Talabalarni_Baholash
             InitializeComponent();
             Con = new Functions();
             GetGuruh();
+            string[] guruh = guruhCombo.Text.Split('-');
+            string guruh1 = guruh[0] + '_' + guruh[1];
+            ShowTable(guruh1);
             GetFan();
-            ShowTable();
         }
         private void GetGuruh()
         {
@@ -35,18 +37,42 @@ namespace Talabalarni_Baholash
             fanCombo.ValueMember = Con.GetData(Query2).Columns["Id"].ToString();
             fanCombo.DataSource = Con.GetData(Query2);
         }
-        public void ShowTable()
+        public void ShowTable(string guruh)
         {
             string Query;
-            Query = "Select Guruh, Id, Ism, Familya From Talabalar where Guruh='{0}';";
+            Query = "IF EXISTS (SELECT 1 " +
+                "FROM INFORMATION_SCHEMA.TABLES " +
+                "WHERE TABLE_NAME = 'Baho_{0}') " +
+                "BEGIN " +
+                "SELECT * FROM Baho_{0}; " +
+                "END";
             Query = string.Format(Query,
-                guruhCombo.Text);
+                guruh);
             BaholarData.DataSource = Con.GetData(Query);
         }
 
         private void baholarFill_Click(object sender, EventArgs e)
         {
-            ShowTable();
+            string[] guruh = guruhCombo.Text.Split('-');
+            string guruh1 = guruh[0] + '_' + guruh[1];
+            ShowTable(guruh1);
+            GetFan();
+        }
+
+        private void addBaho_Click(object sender, EventArgs e)
+        {
+            string[] guruh = guruhCombo.Text.Split('-');
+            string guruh1 = guruh[0] + '_' + guruh[1];
+            string Query3 = "update Baho_{0} set '{1}'='{2}' where Guruh='{3}' and Talaba_Id='{4}'";
+            Query3 = string.Format(Query3,
+                guruh1,
+                fanCombo.Text,
+                bahoTxt.Text,
+                guruhCombo.Text,
+                talabaIdTxt.Text);
+            Con.SetData(Query3);
+            ShowTable(guruh1);
+            GetFan();
         }
     }
 }

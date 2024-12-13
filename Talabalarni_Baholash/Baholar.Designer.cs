@@ -32,24 +32,24 @@ namespace Talabalarni_Baholash
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.fanCombo = new System.Windows.Forms.ComboBox();
+            this.baholarFill = new System.Windows.Forms.Button();
             this.guruhCombo = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.BaholarData = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.talabaIdTxt = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.addBaho = new System.Windows.Forms.Button();
             this.bahoTxt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.addBaho = new System.Windows.Forms.Button();
-            this.BaholarData = new System.Windows.Forms.DataGridView();
-            this.baholarFill = new System.Windows.Forms.Button();
+            this.talabaIdTxt = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.fanCombo = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BaholarData)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -77,9 +77,7 @@ namespace Talabalarni_Baholash
             // panel1
             // 
             this.panel1.Controls.Add(this.baholarFill);
-            this.panel1.Controls.Add(this.fanCombo);
             this.panel1.Controls.Add(this.guruhCombo);
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 44);
@@ -87,30 +85,24 @@ namespace Talabalarni_Baholash
             this.panel1.Size = new System.Drawing.Size(1011, 86);
             this.panel1.TabIndex = 6;
             // 
-            // fanCombo
+            // baholarFill
             // 
-            this.fanCombo.FormattingEnabled = true;
-            this.fanCombo.Location = new System.Drawing.Point(665, 32);
-            this.fanCombo.Name = "fanCombo";
-            this.fanCombo.Size = new System.Drawing.Size(300, 27);
-            this.fanCombo.TabIndex = 4;
+            this.baholarFill.BackColor = System.Drawing.Color.DarkOrange;
+            this.baholarFill.Location = new System.Drawing.Point(884, 32);
+            this.baholarFill.Name = "baholarFill";
+            this.baholarFill.Size = new System.Drawing.Size(115, 36);
+            this.baholarFill.TabIndex = 13;
+            this.baholarFill.Text = "To\'ldirish";
+            this.baholarFill.UseVisualStyleBackColor = false;
+            this.baholarFill.Click += new System.EventHandler(this.baholarFill_Click);
             // 
             // guruhCombo
             // 
             this.guruhCombo.FormattingEnabled = true;
             this.guruhCombo.Location = new System.Drawing.Point(46, 32);
             this.guruhCombo.Name = "guruhCombo";
-            this.guruhCombo.Size = new System.Drawing.Size(300, 27);
+            this.guruhCombo.Size = new System.Drawing.Size(803, 27);
             this.guruhCombo.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(661, 6);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 19);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Fanni tanlash";
             // 
             // label2
             // 
@@ -130,61 +122,6 @@ namespace Talabalarni_Baholash
             this.panel3.Size = new System.Drawing.Size(1011, 597);
             this.panel3.TabIndex = 7;
             // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.addBaho);
-            this.panel4.Controls.Add(this.bahoTxt);
-            this.panel4.Controls.Add(this.label5);
-            this.panel4.Controls.Add(this.talabaIdTxt);
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 727);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1011, 54);
-            this.panel4.TabIndex = 8;
-            // 
-            // talabaIdTxt
-            // 
-            this.talabaIdTxt.Location = new System.Drawing.Point(101, 7);
-            this.talabaIdTxt.Name = "talabaIdTxt";
-            this.talabaIdTxt.Size = new System.Drawing.Size(200, 27);
-            this.talabaIdTxt.TabIndex = 3;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 15);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 19);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Talaba Id";
-            // 
-            // bahoTxt
-            // 
-            this.bahoTxt.Location = new System.Drawing.Point(431, 7);
-            this.bahoTxt.Name = "bahoTxt";
-            this.bahoTxt.Size = new System.Drawing.Size(200, 27);
-            this.bahoTxt.TabIndex = 5;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(376, 15);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 19);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Baho";
-            // 
-            // addBaho
-            // 
-            this.addBaho.BackColor = System.Drawing.Color.Chartreuse;
-            this.addBaho.Location = new System.Drawing.Point(884, 6);
-            this.addBaho.Name = "addBaho";
-            this.addBaho.Size = new System.Drawing.Size(115, 36);
-            this.addBaho.TabIndex = 12;
-            this.addBaho.Text = "Joylash";
-            this.addBaho.UseVisualStyleBackColor = false;
-            // 
             // BaholarData
             // 
             this.BaholarData.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -197,16 +134,80 @@ namespace Talabalarni_Baholash
             this.BaholarData.Size = new System.Drawing.Size(1011, 597);
             this.BaholarData.TabIndex = 7;
             // 
-            // baholarFill
+            // panel4
             // 
-            this.baholarFill.BackColor = System.Drawing.Color.DarkOrange;
-            this.baholarFill.Location = new System.Drawing.Point(426, 23);
-            this.baholarFill.Name = "baholarFill";
-            this.baholarFill.Size = new System.Drawing.Size(115, 36);
-            this.baholarFill.TabIndex = 13;
-            this.baholarFill.Text = "To\'ldirish";
-            this.baholarFill.UseVisualStyleBackColor = false;
-            this.baholarFill.Click += new System.EventHandler(this.baholarFill_Click);
+            this.panel4.Controls.Add(this.fanCombo);
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Controls.Add(this.addBaho);
+            this.panel4.Controls.Add(this.bahoTxt);
+            this.panel4.Controls.Add(this.label5);
+            this.panel4.Controls.Add(this.talabaIdTxt);
+            this.panel4.Controls.Add(this.label4);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(0, 727);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1011, 54);
+            this.panel4.TabIndex = 8;
+            // 
+            // addBaho
+            // 
+            this.addBaho.BackColor = System.Drawing.Color.Chartreuse;
+            this.addBaho.Location = new System.Drawing.Point(884, 6);
+            this.addBaho.Name = "addBaho";
+            this.addBaho.Size = new System.Drawing.Size(115, 36);
+            this.addBaho.TabIndex = 12;
+            this.addBaho.Text = "Joylash";
+            this.addBaho.UseVisualStyleBackColor = false;
+            this.addBaho.Click += new System.EventHandler(this.addBaho_Click);
+            // 
+            // bahoTxt
+            // 
+            this.bahoTxt.Location = new System.Drawing.Point(660, 12);
+            this.bahoTxt.Name = "bahoTxt";
+            this.bahoTxt.Size = new System.Drawing.Size(200, 27);
+            this.bahoTxt.TabIndex = 5;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(605, 15);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(49, 19);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Baho";
+            // 
+            // talabaIdTxt
+            // 
+            this.talabaIdTxt.Location = new System.Drawing.Point(399, 12);
+            this.talabaIdTxt.Name = "talabaIdTxt";
+            this.talabaIdTxt.Size = new System.Drawing.Size(200, 27);
+            this.talabaIdTxt.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(317, 15);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(83, 19);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Talaba Id";
+            // 
+            // fanCombo
+            // 
+            this.fanCombo.FormattingEnabled = true;
+            this.fanCombo.Location = new System.Drawing.Point(129, 12);
+            this.fanCombo.Name = "fanCombo";
+            this.fanCombo.Size = new System.Drawing.Size(179, 27);
+            this.fanCombo.TabIndex = 14;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(11, 15);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(112, 19);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Fanni tanlash";
             // 
             // Baholar
             // 
@@ -227,9 +228,9 @@ namespace Talabalarni_Baholash
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BaholarData)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.BaholarData)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -239,9 +240,7 @@ namespace Talabalarni_Baholash
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox fanCombo;
         private System.Windows.Forms.ComboBox guruhCombo;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
@@ -252,5 +251,7 @@ namespace Talabalarni_Baholash
         private System.Windows.Forms.Button addBaho;
         private System.Windows.Forms.DataGridView BaholarData;
         private System.Windows.Forms.Button baholarFill;
+        private System.Windows.Forms.ComboBox fanCombo;
+        private System.Windows.Forms.Label label3;
     }
 }
